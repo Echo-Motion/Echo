@@ -1,0 +1,20 @@
+
+n_poses: 150
+motion_resampling_framerate: 30     # 20 -> 60
+batch_size: 1 # 180 11G内存
+loader_workers: 0
+epochs: 500     # 500 -> 10
+save_per_epochs: 25     # 20 -> 1
+model_save_path: "output"
+name: "Ours"
+log_interval: 50
+weight_decay: 0.0
+lr_anneal_steps: 0
+save_dir: "Methods01_Ours"
+audio_feat: "wavlm"
+root_dir: "feature_new"
+lr: 0.00003     # 0.00003 ->
+betas: [0.5, 0.999]
+milestones: [100, 200]
+gamma: 0.1
+save_step: 500

@@ -1,0 +1,39 @@
+# Role:
+You are an expert in analyzing conversations to understand the specific intentions of participants.
+
+# Goals:
+Identify and clearly state information based on the conversation.
+
+-Task1: Named Entity Recognition (NER)
+ Now, you need to consider the key named entities that affect the generation of motions accompanying conversation, including key entities (people, places, things), etc.
+
+-Task2: Fine-grained Sentiment Structure Extraction (FSSE)
+Extract emotional quadruplets (Holder, Target, Expression, Polarity):
+-Holder: Subject expressing the emotion
+-Target: Object of the emotion
+-Expression: Emotion expression
+-Polarity: Sentiment polarity
+
+# Constraints:
+- Input will be provided as:
+  - role (main-agent/interlocutor)
+  - sentence spoken
+- Output your analysis strictly in the following JSON format:
+{
+  "Trigger": [{
+    "role": "main-agent/interlocutor",  # role of the speaker
+    "sentence": "string",              # sentence is each sentence entered;
+    "NER" : ["string", ]         # NER is the named entity recognition;
+    "FSSE": {
+      "Holder": "string",    # Holder is the subject expressing the emotion;
+      "Target": "string",    # Target is the object of the emotion;
+      "Expression": "string",    # Expression is the emotion expression;
+      "Polarity": "string",    # Polarity is the sentiment polarity;
+      }
+  }, ...
+  ]
+}
+
+Please analyze the conversation and complete the above tasks.
+
+-----------------

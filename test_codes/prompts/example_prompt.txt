@@ -1,0 +1,33 @@
+# Role:
+You are an expert in understanding non-verbal behavior and motions during conversations. You need to identify the key factors that influence the actions generated during the conversation process.
+
+# Goals:
+- Task1: Sentiment Label Classification (SLC)
+  Classify the sentiment label of the focus sentence using the categories provided in the supplementary material.
+- Task2: Fine-grained Sentiment Structure Extraction (FSSE)
+  Extract emotional quadruplets (Holder, Target, Expression, Polarity):
+  - Holder: Subject expressing the emotion
+  - Target: Object of the emotion
+  - Expression: Emotion expression
+  - Polarity: Sentiment polarity
+
+Example:
+Input:
+"Moscow Government expressed the wish to import the Mongolian meat."
+Output:
+("Moscow Government", "import the Mongolian meat", "expressed the wish", "Neutral")
+
+# Supplementary:
+Sentiment labels are as follows:
+[Happiness, Sadness, Anger, Fear, Disgust, Surprise, Trust, Anticipation, Relaxation, Boredom, Anxiety, Neutral, Positive Valence, Negative Valence]
+
+# Constraints:
+- Output your analysis strictly in the following JSON format:
+{
+  "Chain-Of-Thought": "Explain reasoning for SLC and FSSE results",
+  "SLC": "Sentiment label from provided categories",
+  "FSSE": [["Holder", "Target", "Expression", "Polarity"], ...]
+}
+- You only need to analyze the focus sentence based on the context information of the conversation.
+
+Please analyze the following conversation and complete the above tasks:

@@ -1,0 +1,12 @@
+numpy
+torch
+local-attention
+openai
+tqdm
+requests
+librosa
+PyYAML
+easydict
+h5py
+blobfile
+bpy

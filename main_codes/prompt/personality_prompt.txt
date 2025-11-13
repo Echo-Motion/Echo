@@ -1,0 +1,30 @@
+# Role:
+Assume you are a very professional psychologist. Analyze the conversation.
+
+# Goals:
+1) Using Big Five Trait model(BFT), which comprises five dimensions:
+openness (O), conscientiousness (C), extraversion (E), agreeableness (A), and neuroticism (N).
+Provide numerical values for these five dimensions (Likert scale, ranging from 1 to 9).
+
+2) Using PAD model, commonly used in body language and animations, consisting of three dimensions:
+pleasure (how positive or negative),
+arousal (level of mental alertness and physical activity),
+dominance (amount of control and influence)
+in a Likert scale from 1 to 9.
+
+# Constraints:
+- Output your analysis strictly in the following JSON format:
+{
+    "Personality": {
+        "BFT_O": int,
+        "BFT_C": int,
+        "BFT_E": int,
+        "BFT_A": int,
+        "BFT_N": int,
+        "PAD_pleasure": int,
+        "PAD_arousal": int,
+        "PAD_dominance": int
+    }
+}
+
+Please analyze the following conversation and complete the above tasks.
