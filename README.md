@@ -9,6 +9,7 @@
 Enhancing Conversational Behavior Generation via Hierarchical Semantic Comprehension with Large Language Models.
 
 > “Through linguistic research, we can break down cultural barriers and promote mutual understanding and cooperation between different civilizations.” — Ji Xianlin
+> “通过语言学研究，我们可以打破文化隔阂，促进不同文明之间的相互理解与合作。” — 季羡林
 
 ---
 
